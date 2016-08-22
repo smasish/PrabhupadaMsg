@@ -50,7 +50,7 @@ public class DetailsActivity extends FragmentActivity {
 
 //        ImageView imageView = (ImageView) findViewById(R.id.image);
         TypedArray imgs = getResources().obtainTypedArray(R.array.image_jan);
-        bitmap = BitmapFactory.decodeResource(getResources(), imgs.getResourceId(i, -1));
+        bitmap = BitmapFactory.decodeResource(getResources(), imgs.getResourceId(select, -1));
 //        imageView.setImageBitmap(bitmap);
     }
 
@@ -61,6 +61,8 @@ public class DetailsActivity extends FragmentActivity {
 
         share.setType("image/jpeg");
 
+        if(bitmap !=null)
+         bitmap = ShareImage.getImage();
         ByteArrayOutputStream bytes = new ByteArrayOutputStream();
         bitmap.compress(Bitmap.CompressFormat.JPEG, 100, bytes);
         String path = MediaStore.Images.Media.insertImage(getContentResolver(), bitmap, "title", null);

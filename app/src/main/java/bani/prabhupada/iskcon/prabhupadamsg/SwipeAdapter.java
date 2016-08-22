@@ -42,7 +42,13 @@ public class SwipeAdapter extends FragmentStatePagerAdapter {
 //            c--;
 //        }
         c = i+select;
-        bundle.putInt("count",c);
+        if(c>30 && month_no !=2)
+            bundle.putInt("count",30);
+        else if(c>28 && month_no ==2)
+            bundle.putInt("count",28);
+        else
+           bundle.putInt("count",c);
+
         bundle.putInt("month",month_no);
        // bundle.putInt("selectedno",select);
 

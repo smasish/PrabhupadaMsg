@@ -2,22 +2,22 @@ package bani.prabhupada.iskcon.prabhupadamsg;
 
 import android.graphics.Bitmap;
 
-public class ImageItem {
-    private Bitmap image;
+public class ShareImage {
+    private static Bitmap image;
     private String title;
     private Bitmap shareimage;
 
-    public ImageItem(Bitmap image, String title) {
+    public ShareImage(Bitmap image, String title) {
         super();
         this.image = image;
         this.title = title;
     }
 
-    public Bitmap getImage() {
+    public static Bitmap getImage() {
         return image;
     }
 
-    public void setImage88(Bitmap image) {
+    public void setImage(Bitmap image) {
         this.image = image;
     }
 

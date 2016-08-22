@@ -44,7 +44,7 @@ TextView textView;
        // int select = bundle.getInt("selectedno");
         int mon =  bundle.getInt("month", 1);
         // textView.setText("this is the "+message+" swipe view page");
-        Log.d("====" + mon, "---month name>>-");
+        Log.d("===month name>>=" + mon, "--i--"+i);
       //  Log.d("====" + select, "---select>>-");
         if(mon == 1)
 
@@ -74,6 +74,10 @@ TextView textView;
       // imgs = getResources().obtainTypedArray(R.array.image_jan);
         bitmap = BitmapFactory.decodeResource(getResources(), imgs.getResourceId(i, -1));
         imageView.setImageBitmap(bitmap);
+
+       ShareImage im =  new ShareImage(bitmap, "Image#" + i);
+      im.setImage(bitmap);
+        bitmap = null;
 
        // imageView.setImageBitmap(bitmap);
         return view;
