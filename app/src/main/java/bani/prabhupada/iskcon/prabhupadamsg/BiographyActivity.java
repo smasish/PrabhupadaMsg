@@ -5,13 +5,13 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 
-public class AboutActivity extends Activity {
+public class BiographyActivity extends Activity {
 
 	private TextView ab;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.about);
+		setContentView(R.layout.biography);
 
 		ab = (TextView)findViewById(R.id.about);
 

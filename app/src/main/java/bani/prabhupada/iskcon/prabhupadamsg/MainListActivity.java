@@ -56,18 +56,42 @@ public class MainListActivity extends Activity {
 //				final Intent imageshow = new Intent(MainListActivity.this,
 //						GalleryActivity.class);
 
+				if(position == 0){
+					Intent bio = new Intent(MainListActivity.this,
+							BiographyActivity.class);
+
+					startActivity(bio);
+				}
+
 				if(position == 1){
 					Intent about = new Intent(MainListActivity.this,
-							AboutActivity.class);
+							AudioActivity.class);
 
 					startActivity(about);
 				}
+				else if(position == 2){
+					final Intent imageshow = new Intent(MainListActivity.this,
+							MonthViewActivity.class);
+					imageshow.putExtra("list", position);
+					b1 = position;
+					startActivity(imageshow);
+				}
+				else if(position == 3){
+					 Intent imageshow = new Intent(MainListActivity.this,
+							EkadosiActivity.class);
 
-				final Intent imageshow = new Intent(MainListActivity.this,
-						MonthViewActivity.class);
-				imageshow.putExtra("list", position);
-				b1 = position;
-				startActivity(imageshow);
+					startActivity(imageshow);
+				}
+				else if(position == 4){
+					 Intent imageshow = new Intent(MainListActivity.this,
+							AboutActivity.class);
+
+					startActivity(imageshow);
+				}
+
+
+
+
 			}
 		});
 	}

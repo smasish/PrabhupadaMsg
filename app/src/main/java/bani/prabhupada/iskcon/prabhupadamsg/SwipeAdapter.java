@@ -24,7 +24,9 @@ public class SwipeAdapter extends FragmentStatePagerAdapter {
 
 
     }
+//http://stackoverflow.com/questions/12384971/android-fragmentstatepageradapter-how-to-tag-a-fragment-to-find-it-later
 
+    
     @Override
     public Fragment getItem(int i) {
         Fragment fragment = new PageFragment();

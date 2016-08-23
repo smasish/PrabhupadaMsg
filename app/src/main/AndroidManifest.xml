@@ -26,6 +26,10 @@
         <activity android:name=".MainListActivity" />
 
         <activity android:name=".MonthViewActivity" />
+        <activity android:name=".AudioActivity" />
+        <activity android:name=".EkadosiActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".BiographyActivity" />
 
 
     </application>
