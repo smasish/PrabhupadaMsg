@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -12,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -20,6 +22,10 @@ public class MainListActivity extends Activity {
 	// @Override
 	final String[] links = new String[] { "AutoBiography of Srila Prabhupada", "Chanting of Srila Prabhupada", "Daily Quotes of Prabhupada",
 			"Ekadasi Chart", "Contact Us" };
+
+	String[] detail = new String[] { "Short history of Srila Prabhupada","Mantra Meditation","Read Daily Bangla Quote and share it with your Friends, Family members and well wishers.","Follow this chart for all Ekadosi and maintain paron time","If you have any query, then contact with us through email,fb or mobile."};
+
+	int[] p = {R.drawable.p1, R.drawable.p,R.drawable.p,R.drawable.p,R.drawable.p};
 
 	private TextView title;
 
@@ -153,6 +159,27 @@ public class MainListActivity extends Activity {
 			final TextView textView = (TextView) v
 					.findViewById(R.id.feedrowitem);
 			textView.setText(links[position]);
+			Log.d("--", "---link----"+position);
+
+			final ImageView ab = (ImageView)findViewById(R.id.about);
+			//img.setBackgroundResource(p[position]);
+			if(ab ==null)
+				Log.d("--", "---null----");
+			else
+			ab.setBackgroundResource(R.drawable.p);
+
+
+
+			//ab.setBackgroundResource(R.drawable.jan1);
+
+			TextView bottom = (TextView) v
+					.findViewById(R.id.details);
+			bottom.setText(detail[position]);
+
+
+
+
+
 
 			return v;
 		}

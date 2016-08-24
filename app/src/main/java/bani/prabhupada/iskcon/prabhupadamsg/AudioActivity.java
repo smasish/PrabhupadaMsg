@@ -24,7 +24,7 @@ public class AudioActivity extends Activity {
 		stop=(Button)findViewById(R.id.button3);
 
 
-
+		mp_e = MediaPlayer.create(getApplicationContext(), R.raw.japa);
 	//	final MediaPlayer mp=new MediaPlayer();
 //		try{
 //			//mp.setDataSource(Environment.getExternalStorageDirectory().getPath()+"/Music/maine.mp3");
@@ -37,7 +37,7 @@ public class AudioActivity extends Activity {
 			public void onClick(View v) {
 				try{
 					//mp.setDataSource(Environment.getExternalStorageDirectory().getPath()+"/Music/maine.mp3");
-					mp_e = MediaPlayer.create(getApplicationContext(), R.raw.music);
+					mp_e = MediaPlayer.create(getApplicationContext(), R.raw.japa);
 
 					//mp_e.prepare();
 					mp_e.start();

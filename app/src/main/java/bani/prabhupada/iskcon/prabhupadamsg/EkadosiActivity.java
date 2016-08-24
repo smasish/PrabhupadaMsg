@@ -16,7 +16,7 @@ public class EkadosiActivity extends Activity {
 
 		ab = (ImageView)findViewById(R.id.about);
 
-	//ab.setBackgroundResource(R.drawable.ekadosi);
+	ab.setBackgroundResource(R.drawable.jan1);
 		//ab.setText("Phone\n +8801911612673\n\nEmail: asish.sust@gmail.com\n\nWebsite: www.sylhetiskcon.org");
 
 		Log.d("", "");
