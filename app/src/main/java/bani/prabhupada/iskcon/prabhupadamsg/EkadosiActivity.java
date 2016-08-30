@@ -16,34 +16,13 @@ public class EkadosiActivity extends Activity {
 
 		ab = (ImageView)findViewById(R.id.about);
 
-	ab.setBackgroundResource(R.drawable.jan1);
+	ab.setBackgroundResource(R.drawable.ekadasi);
 		//ab.setText("Phone\n +8801911612673\n\nEmail: asish.sust@gmail.com\n\nWebsite: www.sylhetiskcon.org");
 
 		Log.d("", "");
 //		for(int i = 1;i<31;i++)
 //			System.out.println("<item>@drawable/jan"+i+"</item>");
 
-//		for(int i = 1;i<29;i++)
-//			System.out.println("<item>@drawable/feb"+i+"</item>");
-//		for(int i = 1;i<31;i++)
-//			System.out.println("<item>@drawable/mar"+i+"</item>");
-//		for(int i = 1;i<31;i++)
-//			System.out.println("<item>@drawable/apr"+i+"</item>");
-//		for(int i = 1;i<31;i++)
-//			System.out.println("<item>@drawable/may"+i+"</item>");
-//		for(int i = 1;i<31;i++)
-//			System.out.println("<item>@drawable/jun"+i+"</item>");
-//		for(int i = 1;i<31;i++)
-//			System.out.println("<item>@drawable/jul"+i+"</item>");
-//		for(int i = 1;i<31;i++)
-//			System.out.println("<item>@drawable/aug"+i+"</item>");
-//		for(int i = 1;i<31;i++)
-//			System.out.println("<item>@drawable/sep"+i+"</item>");
-//		for(int i = 1;i<31;i++)
-//			System.out.println("<item>@drawable/oct"+i+"</item>");
-//		for(int i = 1;i<31;i++)
-//			System.out.println("<item>@drawable/nov"+i+"</item>");
-//		for(int i = 1;i<31;i++)
-//			System.out.println("<item>@drawable/dec"+i+"</item>");
+
 	}
 }

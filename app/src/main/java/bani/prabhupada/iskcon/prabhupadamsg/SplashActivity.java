@@ -1,9 +1,5 @@
 package bani.prabhupada.iskcon.prabhupadamsg;
 
-/**
- * Created by Dinesh on 4/19/2015.
- */
-
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Context;
@@ -15,7 +11,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
 
-public class SplashActivity extends ActionBarActivity {
+public class SplashActivity extends Activity {
 
     Context context;
 

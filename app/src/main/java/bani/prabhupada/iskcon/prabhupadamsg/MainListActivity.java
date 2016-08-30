@@ -20,12 +20,17 @@ import android.widget.TextView;
 public class MainListActivity extends Activity {
 	/** Called when the activity is first created. */
 	// @Override
-	final String[] links = new String[] { "AutoBiography of Srila Prabhupada", "Chanting of Srila Prabhupada", "Daily Quotes of Prabhupada",
+	final String[] links = new String[] { "Daily Quote of Srila Prabhupada","Chanting with Srila Prabhupada","Biography of Srila Prabhupada",
 			"Ekadasi Chart", "Contact Us" };
 
-	String[] detail = new String[] { "Short history of Srila Prabhupada","Mantra Meditation","Read Daily Bangla Quote and share it with your Friends, Family members and well wishers.","Follow this chart for all Ekadosi and maintain paron time","If you have any query, then contact with us through email,fb or mobile."};
+	String[] detail = new String[] { "Read daily Srila Prabhupada quotes in Bengali! Share with your Friends & Family, well-wishers as well!!","Mantra Meditation","Short life history of Srila Prabhupada","Follow this chart for all Ekadasi and maintain breakfast time","If you have any query, then contact with us through email, FB or mobile."};
 
-	int[] p = {R.drawable.p1, R.drawable.p,R.drawable.p,R.drawable.p,R.drawable.p};
+
+
+	Integer[] imageId = {
+			R.drawable.p1, R.drawable.p2,R.drawable.p3,R.drawable.p4,R.drawable.contact
+
+	};
 
 	private TextView title;
 
@@ -40,8 +45,8 @@ public class MainListActivity extends Activity {
 
 		final ListView lv = (ListView) findViewById(R.id.ListViewLinks);
 
-		title = (TextView) findViewById(R.id.titlebar);
-		title.setText("List of Prabhupada's Message");
+//		title = (TextView) findViewById(R.id.titlebar);
+//		title.setText("List of Prabhupada's Message");
 
 		
 
@@ -63,10 +68,12 @@ public class MainListActivity extends Activity {
 //						GalleryActivity.class);
 
 				if(position == 0){
-					Intent bio = new Intent(MainListActivity.this,
-							BiographyActivity.class);
+					final Intent imageshow = new Intent(MainListActivity.this,
+							MonthViewActivity.class);
+					imageshow.putExtra("list", position);
+					b1 = position;
+					startActivity(imageshow);
 
-					startActivity(bio);
 				}
 
 				if(position == 1){
@@ -76,11 +83,10 @@ public class MainListActivity extends Activity {
 					startActivity(about);
 				}
 				else if(position == 2){
-					final Intent imageshow = new Intent(MainListActivity.this,
-							MonthViewActivity.class);
-					imageshow.putExtra("list", position);
-					b1 = position;
-					startActivity(imageshow);
+					Intent bio = new Intent(MainListActivity.this,
+							BiographyActivity.class);
+
+					startActivity(bio);
 				}
 				else if(position == 3){
 					 Intent imageshow = new Intent(MainListActivity.this,
@@ -161,12 +167,15 @@ public class MainListActivity extends Activity {
 			textView.setText(links[position]);
 			Log.d("--", "---link----"+position);
 
-			final ImageView ab = (ImageView)findViewById(R.id.about);
+//			ImageView img = new ImageView(MainListActivity.this);
+//			img.setBackgroundResource(imageId[position]);
+
+			final ImageView ab = (ImageView)v.findViewById(R.id.about);
 			//img.setBackgroundResource(p[position]);
 			if(ab ==null)
 				Log.d("--", "---null----");
 			else
-			ab.setBackgroundResource(R.drawable.p);
+			ab.setBackgroundResource(imageId[position]);
 
 
 

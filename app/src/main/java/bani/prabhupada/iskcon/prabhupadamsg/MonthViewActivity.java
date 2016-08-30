@@ -2,6 +2,7 @@ package bani.prabhupada.iskcon.prabhupadamsg;
 
 
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
@@ -15,7 +16,7 @@ import android.widget.GridView;
 
 import java.util.ArrayList;
 
-public class MonthViewActivity extends ActionBarActivity {
+public class MonthViewActivity extends Activity {
     private GridView gridView;
     private GridViewAdapter gridAdapter;
 

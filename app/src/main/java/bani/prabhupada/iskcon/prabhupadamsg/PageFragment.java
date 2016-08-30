@@ -72,11 +72,15 @@ TextView textView;
         else if(mon == 12)
             imgs = getResources().obtainTypedArray(R.array.image_dec);
       // imgs = getResources().obtainTypedArray(R.array.image_jan);
+        if(i>0)
+            i=i-1;
         bitmap = BitmapFactory.decodeResource(getResources(), imgs.getResourceId(i, -1));
+
+        Log.d("=i===" + i, "---set image index>>-");
         imageView.setImageBitmap(bitmap);
 
-       ShareImage im =  new ShareImage(bitmap, "Image#" + i);
-      im.setImage(bitmap);
+//       ShareImage im =  new ShareImage(bitmap, "Image#" + i);
+//      im.setImage(bitmap);
         bitmap = null;
 
        // imageView.setImageBitmap(bitmap);

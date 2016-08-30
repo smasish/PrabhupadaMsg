@@ -20,16 +20,16 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".DetailsActivity"/>
+        <activity android:name=".DetailsActivity" android:screenOrientation="portrait"/>
 
-        <activity android:name=".MainActivity" />
-        <activity android:name=".MainListActivity" />
+        <activity android:name=".MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".MainListActivity" android:screenOrientation="portrait"/>
 
-        <activity android:name=".MonthViewActivity" />
-        <activity android:name=".AudioActivity" />
-        <activity android:name=".EkadosiActivity" />
-        <activity android:name=".AboutActivity" />
-        <activity android:name=".BiographyActivity" />
+        <activity android:name=".MonthViewActivity" android:screenOrientation="portrait" />
+        <activity android:name=".AudioActivity" android:screenOrientation="portrait" />
+        <activity android:name=".EkadosiActivity" android:screenOrientation="portrait" />
+        <activity android:name=".AboutActivity" android:screenOrientation="portrait" />
+        <activity android:name=".BiographyActivity" android:screenOrientation="portrait" />
 
 
     </application>

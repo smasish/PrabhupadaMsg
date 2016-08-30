@@ -3,14 +3,15 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#ffffff"
+    android:background="#B48E8E"
     >
 <TextView  
     android:layout_width="fill_parent" 
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:textSize="18sp"
-    android:layout_marginTop="20dp"
+  android:gravity="center_vertical|center_horizontal"
     android:layout_marginLeft="10dp"
+
     android:textColor="#202020"
     android:id="@+id/about"
     android:text="@string/about"

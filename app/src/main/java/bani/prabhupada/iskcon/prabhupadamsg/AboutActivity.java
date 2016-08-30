@@ -16,7 +16,7 @@ public class AboutActivity extends Activity {
 		ab = (TextView)findViewById(R.id.about);
 
 		ab.setText("ISKCON Youth Forum Sylhet \n" +
-				"Email: debarishisribas@gmail.com\n" +
+				"Email: debarshisribas@gmail.com\n" +
 				"Phone: +8801714101688 \n"+
 				"Facebook: https://www.facebook.com/devarshisrivasdasa");
 
